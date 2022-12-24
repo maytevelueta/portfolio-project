@@ -7,7 +7,7 @@ function Footer ({
     return ( 
         <footer className="footer">
             <div className="footer-links">
-            <a href="https://github.com/maytevelueta" >{GitHub}</a>
+            <a href="https://github.com/maytevelueta">{GitHub}</a>
             <a href="https://www.linkedin.com/in/mayté-rodríguez-velueta-66a295a1/" >{LinkedIn}</a>
             </div>
         </footer>
