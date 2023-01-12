@@ -29,7 +29,7 @@ function ContactForm() {
 
   setTimeout(() =>{
     ContactForm(false)
-  }, 1000);
+  }, 5000);
 
   return (
     <div>

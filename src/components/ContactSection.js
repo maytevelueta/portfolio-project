@@ -6,8 +6,8 @@ import ContactInfoItem from './ContactInfoItem';
 const ContactSection = () => {
   return ( 
     <div>
-      <div className="container">
-        <h1>Let's get in touch!</h1>
+      <div className="contact-container">
+        <h2>Let's get in touch!</h2>
         <div className="contact-wrapper">
           <div className="left">
             <ContactInfoItem icon={<MdLocalPhone />} text="+52 5551579406"/>

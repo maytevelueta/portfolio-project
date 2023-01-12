@@ -7,8 +7,8 @@ function ContactInfoItem({
 }) {
   return (
     <div className="item-container">
-      <div className="info-icon">{icon}</div>
-      <div className="info-text">{text}</div>
+      <div className="info-icon" style={{ background: "#AC7D88" }}>{icon}</div>
+      <div className="info-text" style={{ background: "#AC7D88"}}>{text}</div>
     </div>
   )
 }
