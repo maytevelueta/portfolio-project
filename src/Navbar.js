@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {Link} from "react-scroll";
+import logo from "./assets/logo.png";
 
 const Navbar = () => {
     const [color, setColor] = useState(false)
@@ -16,7 +17,9 @@ const Navbar = () => {
     return ( 
         <div className={color ? "navbar-container navbar-container-bg" : "navbar-container"}>
         <nav className="navbar">
-            <h1>Mayte Velueta</h1>
+            <a href="/" className="logo">
+              <img src={logo} alt="logo"/>
+            </a>
             <div className="links">
                 <a href="/">Home</a>
                 <Link to="project-list" spy={true} smooth={true} offset={-100} duration={500}>Projects</Link>

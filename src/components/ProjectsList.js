@@ -1,11 +1,14 @@
 import { useState } from "react";
+import firstImage from "../assets/the-movies-db.png";
+import secondImage from "../assets/the-movies-db.png";
+import thirdImage from "../assets/cocktails-db.png";
 
 const ProjectsList = () => {
 
     const [projects] = useState([
-        { title: "MoviesDB", photo: (<img src="/assets/the-movies-db.png" alt="projectimg" />), body: "lorem ipsum...", author: "mayte", id: 1 },
-        { title: "Marove Aqua", photo: <img src="/assets/the-movies-db.png" alt="projectimg"/>, body: "lorem ipsum...", author: "mayte", id: 2 },
-        { title: "CocktailsDB", photo: <img src="/assets/cocktails-db.png" alt="projectimg"/>, body: "lorem ipsum...", author: "mayte", id: 3 }
+        { title: "MoviesDB", image: {firstImage}, body: "lorem ipsum...", author: "mayte", id: 1 },
+        { title: "Marove Aqua", image: {secondImage}, body: "lorem ipsum...", author: "mayte", id: 2 },
+        { title: "CocktailsDB", image: {thirdImage}, body: "lorem ipsum...", author: "mayte", id: 3 }
     ]);
 
     return ( 
@@ -23,7 +26,7 @@ const ProjectsList = () => {
                 fontSize: "22px",
                 fontWeight: "bold"
                 }}>{ project.title }</a>
-                    <img className="project-image" src="/assets/cocktails-db.png" alt="projectimg" />
+                    <img src={ project.image } className="project-image" alt="projectimg" />
                     <p>{ project.body }</p> 
                 </div>
             ))}
