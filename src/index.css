@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --main-bg-color: #FDF0E4;
+  --main-bg-color: #f9f4ef;
   --main-text-color: #201c0c;
   --secondary-textcolor: #85586F;
   --secondary-color: #AC7D88;
@@ -9,41 +9,50 @@
 }
 
 * {
-  background-color: var(--main-bg-color);
   font-family: "Quicksand";
   color: #333;
   margin: 0;
 }
 
-.navbar {
-  padding: 1.25rem;
+.navbar-container {
+  position: fixed;
+  height: 5rem;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: .3s ease-in;
+  overflow: hidden;
+}
+.navbar-container-bg {
+  background-color: var(--secondary-color);
+}
+.navbar-container .navbar {
   display: flex;
-  align-items: center;
-  justify-content: center;
   justify-content: space-between;
-  border-bottom: 1px solid #f2f2f2;
+  align-items: center;
   max-width: 60rem;
-  margin: 0 auto;
+  margin: auto;
+  height: 100%;
+  padding: 0 1rem;
+  border-bottom: 1px solid #f2f2f2;
 }
 .navbar h1 {
   color: var(--secondary-textcolor);
 }
-.navbar .links {
-  margin-left: auto;
-}
 .navbar a {
-  margin-left: 1.25rem;
+  font-weight: 600;
+  margin-right: 1.25rem;
   text-decoration: none;
-  padding: 6px;
 }
 .navbar a:hover {
-  color: var(--secondary-color);
+  color: var(--secondary-textcolor);
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0 50px 0;
+  padding: 50px 0 50px 0;
   max-width: 60rem;
 }
 
@@ -53,7 +62,7 @@
   padding: 1.5rem;
 }
 
-.project-list {
+.project-list a {
   padding: 50px 0;
 }
 
@@ -63,7 +72,6 @@
   justify-content: center;
   align-items: center;
   padding: 50px 0;
-  background-color: var(--main-bg-color);
 }
 
 .project-preview {
