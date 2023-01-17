@@ -4,7 +4,7 @@
   --main-bg-color: #f9f4ef;
   --main-text-color: #201c0c;
   --secondary-textcolor: #85586F;
-  --secondary-color: #AC7D88;
+  --secondary-color: #b78b95;
   --tertiary-color: #DEB6AB;
 }
 
@@ -77,7 +77,7 @@
 .project-preview {
   justify-content: center;
   align-items: center;
-  background-color: #AC7D88;
+  background-color: var(--secondary-color);
   border-radius: 8px;
   padding: 1.25rem;
   margin: 10px;
@@ -115,13 +115,13 @@
 }*/
 .value-preview h2 {
   color: var(--secondary-textcolor);
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   justify-items: center;
 }
 
 .item-container {
   padding: 2rem;
-  background-color: #AC7D88;
+  background-color: var(--secondary-color);
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -205,6 +205,7 @@ button[type='submit'] {
 
 .dots-container {
   margin-left: 10%;
+  /*border-radius: 50%; N*/
   position: relative;
   display: flex;
   flex-wrap: wrap;
