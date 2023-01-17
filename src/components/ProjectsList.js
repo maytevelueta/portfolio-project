@@ -10,7 +10,11 @@ const ProjectsList = () => {
 
     return ( 
         <div className="project-list">
-            <h2>Recent Projects</h2>
+            <a href="/project-listing" style={{
+                textDecoration: "none",
+                fontSize: "22px",
+                fontWeight: "bold"
+                }}>Recent Projects</a>
             <div className="project-container">
             {projects.map((project) => (
                 <div className="project-preview" key={project.id}>
