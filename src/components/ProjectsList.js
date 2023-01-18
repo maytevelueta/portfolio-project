@@ -1,14 +1,14 @@
-import { useState } from "react";
 import firstImage from "../assets/the-movies-db.png";
-import secondImage from "../assets/the-movies-db.png";
+import secondImage from "../assets/marove-aqua.png";
 import thirdImage from "../assets/cocktails-db.png";
+import { useState } from "react";
 
 const ProjectsList = () => {
 
     const [projects] = useState([
-        { title: "MoviesDB", image: {firstImage}, body: "lorem ipsum...", author: "mayte", id: 1 },
-        { title: "Marove Aqua", image: {secondImage}, body: "lorem ipsum...", author: "mayte", id: 2 },
-        { title: "CocktailsDB", image: {thirdImage}, body: "lorem ipsum...", author: "mayte", id: 3 }
+        { title: "MoviesDB", photo: {firstImage}, link: "https://moviesdb-maytev.netlify.app", body: "lorem ipsum...", author: "mayte", id: 1 },
+        { title: "Marove Aqua", photo: {secondImage}, link: "https://cocktails-app-mr.netlify.app/", body: "lorem ipsum...", author: "mayte", id: 2 },
+        { title: "CocktailsDB", photo: {thirdImage}, link: "https://cocktails-app-mr.netlify.app/", body: "lorem ipsum...", author: "mayte", id: 3 }
     ]);
 
     return ( 
@@ -21,12 +21,12 @@ const ProjectsList = () => {
             <div className="project-container">
             {projects.map((project) => (
                 <div className="project-preview" key={project.id}>
-                <a href="https://cocktails-app-mr.netlify.app/" style={{
+                <a href={ project.link } style={{
                 textDecoration: "none",
                 fontSize: "22px",
                 fontWeight: "bold"
                 }}>{ project.title }</a>
-                    <img src={ project.image } className="project-image" alt="projectimg" />
+                    <img className="project-image"  src={ secondImage } alt="projectimg"/>
                     <p>{ project.body }</p> 
                 </div>
             ))}
