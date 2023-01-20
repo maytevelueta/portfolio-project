@@ -6,9 +6,9 @@ import { useState } from "react";
 const ProjectsList = () => {
 
     const [projects] = useState([
-        { title: "MoviesDB", photo: {firstImage}, link: "https://moviesdb-maytev.netlify.app", body: "lorem ipsum...", author: "mayte", id: 1 },
-        { title: "Marove Aqua", photo: {secondImage}, link: "https://cocktails-app-mr.netlify.app/", body: "lorem ipsum...", author: "mayte", id: 2 },
-        { title: "CocktailsDB", photo: {thirdImage}, link: "https://cocktails-app-mr.netlify.app/", body: "lorem ipsum...", author: "mayte", id: 3 }
+        { title: "MoviesDB", photo: [firstImage], link: "https://moviesdb-maytev.netlify.app", body: "lorem ipsum...", author: "mayte", id: 1 },
+        { title: "Marove Aqua", photo: [secondImage], link: "https://cocktails-app-mr.netlify.app/", body: "lorem ipsum...", author: "mayte", id: 2 },
+        { title: "CocktailsDB", photo: [thirdImage], link: "https://cocktails-app-mr.netlify.app/", body: "lorem ipsum...", author: "mayte", id: 3 }
     ]);
 
     return ( 
@@ -20,13 +20,13 @@ const ProjectsList = () => {
                 }}>Recent Projects</a>
             <div className="project-container">
             {projects.map((project) => (
-                <div className="project-preview" key={project.id}>
+                <div className="project-preview" key={ project.id }>
                 <a href={ project.link } style={{
                 textDecoration: "none",
                 fontSize: "22px",
                 fontWeight: "bold"
                 }}>{ project.title }</a>
-                    <img className="project-image"  src={ secondImage } alt="projectimg"/>
+                    <img className="project-image"  src={ project.photo } alt="projectimg"/>
                     <p>{ project.body }</p> 
                 </div>
             ))}
