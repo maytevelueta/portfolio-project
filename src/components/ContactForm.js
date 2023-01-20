@@ -27,8 +27,8 @@ function ContactForm() {
       showResult(true);
   };
 
-  setTimeout(() =>{
-    ContactForm(false)
+  setTimeout(() => {
+    ContactForm(false);
   }, 5000);
 
   return (
