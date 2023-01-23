@@ -22,8 +22,8 @@ const Navbar = () => {
             </a>
             <div className="links">
                 <a href="/">Home</a>
-                <Link to="project-list" spy={true} smooth={true} offset={-100} duration={500}>Projects</Link>
-                <Link to="contact" spy={true} smooth={true} offset={-100} duration={500}>Contact</Link>
+                <Link to="project-list" spy={true} smooth={true} offset={-100} duration={500} style={{cursor:"pointer"}}>Projects</Link>
+                <Link to="contact" spy={true} smooth={true} offset={-100} duration={500} style={{cursor:"pointer"}}>Contact</Link>
             </div>
         </nav>
         </div>
