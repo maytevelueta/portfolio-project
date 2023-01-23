@@ -52,14 +52,18 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 100px 0 100px 0;
-  max-width: 60rem;
+  padding: 200px 0 100px 0;
 }
 
-.content {
+/*.content {
   max-width: 60rem;
   margin: 2.5rem auto;
   padding: 1.5rem;
+}*/
+
+.content {
+  width: 60%;
+  margin: 0 auto;
 }
 
 .project-list a {
@@ -86,7 +90,7 @@
   box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
 }
 .project-image {
-  width: 25em;
+  width: 100%;
   height: 12em;
   margin-top: 1rem;
   border-radius: 8px;
@@ -94,9 +98,7 @@
 
 .values-list {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   padding: 50px 0 100px 0;
 }
 
@@ -189,14 +191,12 @@ button[type='submit'] {
 }
 
 .footer {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
   padding: 50px 0;
 }
 .footer-links a {
-  justify-content: space-between;
   padding: 0 30px 50px 30px;
 }
 
@@ -280,5 +280,91 @@ button[type='submit'] {
 
 .dots:nth-child(9) {
   animation-delay: 1s;
+}
+
+
+/* Small devices (landscape phones, 576px and up)*/
+
+@media (max-width: 576px) {
+
+  * {
+    font-size: 16px;
+  }
+
+  .header h1{
+    font-size: 24px;
+    padding-bottom: 30%;
+  }
+
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 100px 0 100px 0;
+  }
+
+}
+  
+  /* Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) { 
+
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) {
+
+  
+
+  .content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30%;
+  }
+
+  .values-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .value-preview {
+    margin: 10%;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-preview {
+    margin: 10%;
+  }
+
+  .contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact-wrapper::after{
+    display: none;
+  }
+
+  .footer {
+    width: 150%;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+  .content {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
