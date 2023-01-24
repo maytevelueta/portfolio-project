@@ -27,8 +27,8 @@ const Navbar = () => {
               <img src={logo} alt="logo"/>
             </a>
             <div className="hamburger" onClick={handleClick}>
-                { click ? (<FaTimes size={30} style={{color: '#ffffff'}} />) :
-                (<FaBars size={30} style={{color: '#85586F'}} />)}
+                { click ? (<FaTimes size={ 30 } style={{ fill: '#85586F' }} />) :
+                (<FaBars size={ 30 } style={{ fill: '#85586F' }} />)}
             </div>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
                 <li className="nav-link">
