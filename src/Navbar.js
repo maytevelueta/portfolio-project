@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import {Link} from "react-scroll";
 import {FaBars, FaTimes} from 'react-icons/fa';
+import {Link} from "react-scroll";
 import logo from "./assets/logo.png";
 
 const Navbar = () => {
     const [click, setClick] = useState(false)
-
     const handleClick = () => setClick(!click)
+
+    const closeMenu = () => setClick(false)
 
     const [color, setColor] = useState(false)
     const changeColor = () => {
@@ -31,13 +32,13 @@ const Navbar = () => {
             </div>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
                 <li className="nav-link">
-                <a href="/">Home</a>
+                <a href="/" onClick={closeMenu}>Home</a>
                 </li>
                 <li className="nav-link">
-                <Link to="project-list" spy={true} smooth={true} offset={-100} duration={500} style={{cursor:"pointer"}}>Projects</Link>
+                <Link to="project-list" onClick={closeMenu} spy={true} smooth={true} offset={-100} duration={500} style={{cursor:"pointer"}}>Projects</Link>
                 </li>
                 <li className="nav-link">
-                <Link to="contact" spy={true} smooth={true} offset={-100} duration={500} style={{cursor:"pointer"}}>Contact</Link>
+                <Link to="contact" onClick={closeMenu} spy={true} smooth={true} offset={-100} duration={500} style={{cursor:"pointer"}}>Contact</Link>
                 </li>
             </ul>
         </nav>
