@@ -7,7 +7,7 @@ const ProjectsList = () => {
 
     const [projects] = useState([
         { title: "MoviesDB", photo: [firstImage], link: "https://moviesdb-maytev.netlify.app", body: "", author: "mayte", id: 1 },
-        { title: "Marove Aqua", photo: [secondImage], link: "https://cocktails-app-mr.netlify.app/", body: "", author: "mayte", id: 2 },
+        { title: "Marove Aqua", photo: [secondImage], link: "https://marove-aqua.netlify.app/", body: "", author: "mayte", id: 2 },
         { title: "CocktailsDB", photo: [thirdImage], link: "https://cocktails-app-mr.netlify.app/", body: "", author: "mayte", id: 3 }
     ]);
 
