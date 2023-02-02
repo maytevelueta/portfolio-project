@@ -70,7 +70,7 @@ ul {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 10rem 0 10rem 0;
+  padding: 15rem 0 10rem 0;
 }
 
 /*.content {
