@@ -264,7 +264,7 @@ button[type='submit'] {
 }
 
 .dots:nth-child(1) {
-  animation-delay: 0.2s;
+  animation-delay: 0.6s;
 }
 
 .dots:nth-child(2) {
@@ -276,11 +276,11 @@ button[type='submit'] {
 }
 
 .dots:nth-child(4) {
-  animation-delay: 0.8s;
+  animation-delay: 1s;
 }
 
 .dots:nth-child(5) {
-  animation-delay: 0.3s;
+  animation-delay: 0.6s;
 }
 
 .dots:nth-child(6) {
