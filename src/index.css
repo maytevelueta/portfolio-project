@@ -220,7 +220,6 @@ button[type='submit'] {
 
 .dots-container {
   margin-left: 10%;
-  /*border-radius: 50%; N*/
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -297,7 +296,7 @@ button[type='submit'] {
 }
 
 .dots:nth-child(9) {
-  animation-delay: 1s;
+  animation-delay: 1.2s;
 }
 
 
