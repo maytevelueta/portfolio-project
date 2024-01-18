@@ -14,9 +14,9 @@ const ContactSection = () => {
                 }}>Let's get in touch!</a>
         <div className="contact-wrapper">
           <div className="left">
-            <ContactInfoItem icon={<MdLocalPhone />} text="+52 5551579406"/>
+            <ContactInfoItem icon={<MdLocalPhone />} text="07471 260822"/>
             <ContactInfoItem icon={<MdEmail />} text="maytevelueta@gmail.com"/>
-            <ContactInfoItem text="México"/>
+            <ContactInfoItem text="London, UK"/>
           </div>
           <div className="right">
             <ContactForm />
