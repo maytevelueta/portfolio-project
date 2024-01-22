@@ -115,9 +115,14 @@ ul {
   border-radius: 8px;
 }
 
+.values-container {
+  height: 100vh;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .values-list {
-  display: flex;
-  justify-content: space-between;
   padding: 5rem 0 5rem 0;
 }
 
