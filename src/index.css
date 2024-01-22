@@ -116,17 +116,17 @@ ul {
 }
 
 .values-container {
-  height: 100vh;
   display: grid;
   gap: 3rem;
   grid-template-columns: 1fr 1fr 1fr;
-}
-
-.values-list {
   padding: 5rem 0 5rem 0;
 }
 
-.value-preview {
+/*.values-list {
+  padding: 5rem 0 5rem 0;
+}*/
+
+.values-preview {
   padding: 2rem;
   width: 15rem;
   height: 15rem;
@@ -332,6 +332,11 @@ button[type='submit'] {
     justify-content: center;
   }
 
+  .values-container {
+    display: grid;
+    gap: 3rem;
+  }
+
 }
   
   /* Medium devices (tablets, 768px and up)*/
@@ -371,6 +376,12 @@ button[type='submit'] {
     margin: 10% 0;
   }
 
+  .values-container {
+    display: grid;
+    grid-auto-columns: auto;
+    gap: 3rem;
+  }
+
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -379,11 +390,6 @@ button[type='submit'] {
   .content {
     width: 60%;
     margin: 0 auto;
-  }
-  .values-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .value-preview {

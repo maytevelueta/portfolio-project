@@ -4,7 +4,7 @@ const Values = ({values, title}) => {
         <h2 style={{ marginBottom: "2rem" }}>{ title }</h2>
         <div className="values-container">
             {values.map((value) => (
-                <div className="value-preview" key={value.id}>
+                <div className="values-preview" key={value.id}>
                     <h2 className="values-text" style={{ color: "#85586F" }}>{ value.title }</h2>
                     <p className="values-text">{ value.body }</p> 
                 </div>
