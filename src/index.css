@@ -116,10 +116,10 @@ ul {
 }
 
 .values-container {
-  display: grid;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
   gap: 3rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 5rem 0 5rem 0;
 }
 
 /*.values-list {
