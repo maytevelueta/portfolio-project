@@ -1,7 +1,11 @@
 const Values = ({values, title}) => {
     return ( 
         <div>
-        <h2 style={{ marginBottom: "2rem" }}>{ title }</h2>
+        <h2 style={{ 
+            marginBottom: "2rem",
+            textDecoration: "none",
+            fontSize: "22px",
+            fontWeight: "bold" }}>{ title }</h2>
         <div className="values-container">
             {values.map((value) => (
                 <div className="values-preview" key={value.id}>
