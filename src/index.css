@@ -90,18 +90,17 @@ ul {
 
 .project-container {
   display: inline-flex;
-  flex-direction: row;
   justify-content: space-around;
   padding: 5rem 0;
   width: 100%;
+  gap: 3rem;
 }
 
 .project-preview {
   background-color: var(--secondary-color);
   border-radius: 8px;
   padding: 1rem;
-  margin: 10px;
-  width: 20rem;
+  width: 33%;
   height: 15rem;
 }
 .project-preview:hover {
@@ -128,6 +127,7 @@ ul {
 }*/
 
 .values-preview {
+  height: 100vh;
   padding: 2rem;
   width: 15rem;
   height: 15rem;
@@ -391,16 +391,8 @@ button[type='submit'] {
 /* Large devices (desktops, 992px and up)*/
 @media (max-width: 992px) {
 
-  .content {
-    width: 60%;
-    margin: 0 auto;
-  }
-
   .value-preview {
     margin: 10%;
-  }
-
-  .project-container {
   }
 
   .project-preview {
@@ -431,11 +423,6 @@ button[type='submit'] {
 
 /* X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) and (max-width: 1400px) {
-
-  .content {
-    width: 50%;
-    margin: 0 auto;
-  }
 
   .contact-wrapper::after{
     display: none;
