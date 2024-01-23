@@ -14,6 +14,7 @@ const ProjectsList = () => {
     return ( 
         <div className="project-list">
             <a href="/project-listing" style={{
+                marginBottom: "2rem",
                 textDecoration: "none",
                 fontSize: "22px",
                 fontWeight: "bold"
